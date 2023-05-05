@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.banner{
+    background-image: url(sb1.png);
+    height: 10vw;
+    min-height: 20px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 20%;
+
+    animation: movedown 1s linear;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+ }
+ @keyframes movedown {
+ 0% {
+    transform: translateY(-100px);
+    visibility: visible;
+ }
+ 100% { 
+    transform: translateY(0px);
+    visibility: visible;
+ }
+}
+ header{
+    background-color: blue;
+ }
+
+nav{
+    background-color: blue;
+    overflow: hidden;
+    animation: moveright 1s linear;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes moveright {
+    0% {
+       transform: translateX(-100px);
+       visibility: visible;
+    }
+    100% { 
+       transform: translateX(0px);
+       visibility: visible;
+    }
+}
+
+nav a { text-decoration: none;
+    padding: 20px;
+
+     text-align: center;
+     
+     float: left;
+     color: antiquewhite;
+     cursor: text("Know more");
+}
+section {
+    margin: 15px 30px ;
+    font-size: 17px;
+    padding: 8px;
+background-color: antiquewhite;
+    padding: 5px;
+    border: 2px solid blue;
+    animation: fade-in 1s forwards;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes fade-in {
+    0% {
+       opacity: 0;
+       visibility: visible;
+    }
+    100% { 
+       opacity: 1;
+       visibility: visible;
+    }
+}
+
+section h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+section .centre {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+section p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+footer {
+    background-color: blue;
+    overflow: hidden;
+ }
+
+ footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float:left ;
+    color: antiquewhite;
+ }
+ footer address {
+    cursor: text( " 188, Raja Subodh Chandra Mallick rd, Jadavpur University Campus Area, Jadavpur , Kolkata-32");
+ }
+ footer Email ID {
+    cursor: text (" jaduniv.ieee@gmail.com");
+ }
+ section h1 {
+    text-align: center;
+    
+ }
+section h3 {
+    text-align: center;
+}
+section h4 {
+    text-align: center;
+}
+section h6 {
+    text-align: centre;
+}
